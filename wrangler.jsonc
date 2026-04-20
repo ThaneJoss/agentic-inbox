@@ -1,6 +1,13 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "email",
+	"workers_dev": false,
+	"routes": [
+		{
+			"pattern": "email.thanejoss.com",
+			"custom_domain": true
+		}
+	],
 	"compatibility_date": "2025-11-28",
 	"main": "./workers/app.ts",
 	"observability": {
